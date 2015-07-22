@@ -121,7 +121,7 @@ set_global_assignment -name SYNTH_TIMING_DRIVEN_SYNTHESIS ON
 set_global_assignment -name FITTER_EFFORT "AUTO FIT"
 set_global_assignment -name SAVE_DISK_SPACE OFF
 set_global_assignment -name SMART_RECOMPILE ON
-set_global_assignment -name AUTO_PACKED_REGISTERS_STRATIXII AUTO
+set_global_assignment -name QII_AUTO_PACKED_REGISTERS AUTO
 set_global_assignment -name REMOVE_DUPLICATE_REGISTERS OFF
 set_global_assignment -name LOGICLOCK_INCREMENTAL_COMPILE_ASSIGNMENT ON
 set_global_assignment -name PHYSICAL_SYNTHESIS_EFFORT EXTRA
