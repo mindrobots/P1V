@@ -13,6 +13,7 @@ c5_pin_model_dump.txt
 *.qdf
 *.qws
 *.rpt
+*.sld
 *.sof
 *.done
 *.smsg
