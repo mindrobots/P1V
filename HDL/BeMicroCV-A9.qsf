@@ -1,24 +1,25 @@
 # -------------------------------------------------------------------------- #
 #
-# Copyright (C) 1991-2011 Altera Corporation
-# Your use of Altera Corporation's design tools, logic functions
-# and other software and tools, and its AMPP partner logic
-# functions, and any output files from any of the foregoing
-# (including device programming or simulation files), and any
-# associated documentation or information are expressly subject
-# to the terms and conditions of the Altera Program License
-# Subscription Agreement, Altera MegaCore Function License
-# Agreement, or other applicable license agreement, including,
-# without limitation, that your use is for the sole purpose of
-# programming logic devices manufactured by Altera and sold by
-# Altera or its authorized distributors.  Please refer to the
-# applicable agreement for further details.
+# Copyright (C) 1991-2015 Altera Corporation. All rights reserved.
+# Your use of Altera Corporation's design tools, logic functions 
+# and other software and tools, and its AMPP partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Altera Program License 
+# Subscription Agreement, the Altera Quartus II License Agreement,
+# the Altera MegaCore Function License Agreement, or other 
+# applicable license agreement, including, without limitation, 
+# that your use is for the sole purpose of programming logic 
+# devices manufactured by Altera and sold by Altera or its 
+# authorized distributors.  Please refer to the applicable 
+# agreement for further details.
 #
 # -------------------------------------------------------------------------- #
 #
 # Quartus II 64-Bit
-# Version 11.1 Build 259 01/25/2012 Service Pack 2 SJ Full Version
-# Date created = 13:08:54  October 05, 2012
+# Version 15.0.1 Build 150 06/03/2015 SJ Web Edition
+# Date created = 23:53:53  July 25, 2015
 #
 # -------------------------------------------------------------------------- #
 #
@@ -36,94 +37,19 @@
 # -------------------------------------------------------------------------- #
 
 
-set_global_assignment -name FAMILY "Cyclone V"
-set_global_assignment -name DEVICE 5CEFA9F23C8
-set_global_assignment -name TOP_LEVEL_ENTITY top
+
+# Project-Wide Assignments
+# ========================
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 15.0.0
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "22:04:11  JULY 16, 2015"
-set_global_assignment -name LAST_QUARTUS_VERSION 15.0.0
+set_global_assignment -name LAST_QUARTUS_VERSION 15.0.1
 set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
-set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
-set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
-set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "3.3-V LVCMOS"
-
-
-
-
-
-set_global_assignment -name VERILOG_INPUT_VERSION SYSTEMVERILOG_2005
-set_global_assignment -name VERILOG_SHOW_LMF_MAPPING_MESSAGES OFF
-set_global_assignment -name USE_CONFIGURATION_DEVICE OFF
-set_global_assignment -name CRC_ERROR_OPEN_DRAIN OFF
-set_global_assignment -name CYCLONEII_RESERVE_NCEO_AFTER_CONFIGURATION "USE AS REGULAR IO"
-set_global_assignment -name OUTPUT_IO_TIMING_NEAR_END_VMEAS "HALF VCCIO" -rise
-set_global_assignment -name OUTPUT_IO_TIMING_NEAR_END_VMEAS "HALF VCCIO" -fall
-set_global_assignment -name OUTPUT_IO_TIMING_FAR_END_VMEAS "HALF SIGNAL SWING" -rise
-set_global_assignment -name OUTPUT_IO_TIMING_FAR_END_VMEAS "HALF SIGNAL SWING" -fall
-
-set_global_assignment -name OPTIMIZE_HOLD_TIMING "ALL PATHS"
-set_global_assignment -name OPTIMIZE_MULTI_CORNER_TIMING ON
-
-set_global_assignment -name TIMEQUEST_MULTICORNER_ANALYSIS ON
-set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
-set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
-set_global_assignment -name SYNTH_TIMING_DRIVEN_SYNTHESIS ON
-set_global_assignment -name SAVE_DISK_SPACE OFF
 set_global_assignment -name SMART_RECOMPILE ON
-set_global_assignment -name REMOVE_DUPLICATE_REGISTERS OFF
-set_global_assignment -name LOGICLOCK_INCREMENTAL_COMPILE_ASSIGNMENT ON
-set_global_assignment -name PHYSICAL_SYNTHESIS_EFFORT EXTRA
-set_global_assignment -name RESERVE_ALL_UNUSED_PINS "AS INPUT TRI-STATED"
-set_global_assignment -name RESERVE_ALL_UNUSED_PINS_NO_OUTPUT_GND "AS INPUT TRI-STATED"
-set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
-set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
-set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
-
-
-
-
-
-set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to inp_resn
-set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to io[31]
-set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to io[30]
-set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to io[29]
-set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to io[28]
-set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to io[27]
-set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to io[26]
-set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to io[25]
-set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to io[24]
-set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to io[23]
-set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to io[22]
-set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to io[21]
-set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to io[20]
-set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to io[19]
-set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to io[18]
-set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to io[17]
-set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to io[16]
-set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to io[15]
-set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to io[14]
-set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to io[13]
-set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to io[12]
-set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to io[11]
-set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to io[10]
-set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to io[9]
-set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to io[8]
-set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to io[7]
-set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to io[6]
-set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to io[5]
-set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to io[4]
-set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to io[3]
-set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to io[2]
-set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to io[1]
-set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to io[0]
-
-set_global_assignment -name FMAX_REQUIREMENT "80 MHz" -section_id clock_cog
-set_global_assignment -name FMAX_REQUIREMENT "160 MHz" -section_id clock_pll
-
-set_parameter -name INVERT_COG_LEDS 1
 set_global_assignment -name NUM_PARALLEL_PROCESSORS ALL
+
+# Pin & Location Assignments
+# ==========================
 set_location_assignment PIN_H13 -to DDR3_CLK_50MHZ
-set_instance_assignment -name IO_STANDARD "1.8 V" -to DDR3_CLK_50MHZ
 set_location_assignment PIN_M9 -to CLK_24_MHZ
 set_location_assignment PIN_B17 -to USER_LED1
 set_location_assignment PIN_E19 -to USER_LED2
@@ -133,26 +59,12 @@ set_location_assignment PIN_C20 -to USER_LED5
 set_location_assignment PIN_C21 -to USER_LED6
 set_location_assignment PIN_D19 -to USER_LED7
 set_location_assignment PIN_D21 -to USER_LED8
-set_instance_assignment -name IO_STANDARD "1.5 V" -to USER_LED1
-set_instance_assignment -name IO_STANDARD "1.5 V" -to USER_LED2
-set_instance_assignment -name IO_STANDARD "1.5 V" -to USER_LED3
-set_instance_assignment -name IO_STANDARD "1.5 V" -to USER_LED4
-set_instance_assignment -name IO_STANDARD "1.5 V" -to USER_LED5
-set_instance_assignment -name IO_STANDARD "1.5 V" -to USER_LED6
-set_instance_assignment -name IO_STANDARD "1.5 V" -to USER_LED7
-set_instance_assignment -name IO_STANDARD "1.5 V" -to USER_LED8
 set_location_assignment PIN_H18 -to TACT1
 set_location_assignment PIN_J18 -to TACT2
-set_instance_assignment -name IO_STANDARD "1.5 V" -to TACT1
-set_instance_assignment -name IO_STANDARD "1.5 V" -to TACT2
 set_location_assignment PIN_C16 -to DIP_SW1
 set_location_assignment PIN_D17 -to DIP_SW2
 set_location_assignment PIN_G17 -to DIP_SW3
 set_location_assignment PIN_E16 -to DIP_SW4
-set_instance_assignment -name IO_STANDARD "1.5 V" -to DIP_SW1
-set_instance_assignment -name IO_STANDARD "1.5 V" -to DIP_SW2
-set_instance_assignment -name IO_STANDARD "1.5 V" -to DIP_SW3
-set_instance_assignment -name IO_STANDARD "1.5 V" -to DIP_SW4
 set_location_assignment PIN_L7 -to DDR3_A0
 set_location_assignment PIN_K7 -to DDR3_A1
 set_location_assignment PIN_H8 -to DDR3_A2
@@ -167,38 +79,15 @@ set_location_assignment PIN_C6 -to DDR3_A10
 set_location_assignment PIN_D6 -to DDR3_A11
 set_location_assignment PIN_D7 -to DDR3_A12
 set_location_assignment PIN_C8 -to DDR3_A13
-set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to DDR3_A0
-set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to DDR3_A1
-set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to DDR3_A2
-set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to DDR3_A3
-set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to DDR3_A4
-set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to DDR3_A5
-set_instance_assignment -name IO_STANDARD "SSTL-18 CLASS I" -to DDR3_A6
-set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to DDR3_A7
-set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to DDR3_A8
-set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to DDR3_A9
-set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to DDR3_A10
-set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to DDR3_A11
-set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to DDR3_A12
-set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to DDR3_A13
 set_location_assignment PIN_A5 -to DDR3_BA0
 set_location_assignment PIN_B10 -to DDR3_BA1
 set_location_assignment PIN_C9 -to DDR3_BA2
 set_location_assignment PIN_B6 -to DDR3_CASn
-set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to DDR3_BA0
-set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to DDR3_BA1
-set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to DDR3_BA2
-set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to DDR3_CASn
-set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to DDR3_CKE
 set_location_assignment PIN_J9 -to DDR3_CLK
-set_instance_assignment -name IO_STANDARD "DIFFERENTIAL 1.5-V SSTL CLASS I" -to DDR3_CLK
 set_location_assignment PIN_H9 -to "DDR3_CLK(n)"
 set_location_assignment PIN_E9 -to DDR3_CSn
 set_location_assignment PIN_G11 -to DDR3_DM0
 set_location_assignment PIN_J17 -to DDR3_DM1
-set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to DDR3_CSn
-set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to DDR3_DM0
-set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to DDR3_DM1
 set_location_assignment PIN_E12 -to DDR3_DQ0
 set_location_assignment PIN_D12 -to DDR3_DQ1
 set_location_assignment PIN_C11 -to DDR3_DQ2
@@ -215,36 +104,14 @@ set_location_assignment PIN_B15 -to DDR3_DQ12
 set_location_assignment PIN_C15 -to DDR3_DQ13
 set_location_assignment PIN_G15 -to DDR3_DQ14
 set_location_assignment PIN_K16 -to DDR3_DQ15
-set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to DDR3_DQ0
-set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to DDR3_DQ1
-set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to DDR3_DQ2
-set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to DDR3_DQ3
-set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to DDR3_DQ4
-set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to DDR3_DQ5
-set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to DDR3_DQ6
-set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to DDR3_DQ7
-set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to DDR3_DQ8
-set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to DDR3_DQ9
-set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to DDR3_DQ10
-set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to DDR3_DQ11
-set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to DDR3_DQ12
-set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to DDR3_DQ13
-set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to DDR3_DQ14
-set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to DDR3_DQ15
 set_location_assignment PIN_H11 -to DDR3_DQS0
-set_instance_assignment -name IO_STANDARD "DIFFERENTIAL 1.5-V SSTL CLASS I" -to DDR3_DQS0
 set_location_assignment PIN_G12 -to "DDR3_DQS0(n)"
 set_location_assignment PIN_H14 -to DDR3_DQS1
-set_instance_assignment -name IO_STANDARD "DIFFERENTIAL 1.5-V SSTL CLASS I" -to DDR3_DQS1
 set_location_assignment PIN_J13 -to "DDR3_DQS1(n)"
 set_location_assignment PIN_L8 -to DDR3_ODT
-set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to DDR3_ODT
 set_location_assignment PIN_B7 -to DDR3_RASn
-set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to DDR3_RASn
 set_location_assignment PIN_J19 -to DDR3_RESETn
-set_instance_assignment -name IO_STANDARD "1.5 V" -to DDR3_RESETn
 set_location_assignment PIN_F7 -to DDR3_WEn
-set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to DDR3_WEn
 set_location_assignment PIN_M8 -to ENET_RX_CLK
 set_location_assignment PIN_L22 -to ENET_GTX_CLK
 set_location_assignment PIN_K21 -to ENET_RSTn
@@ -371,4 +238,190 @@ set_location_assignment PIN_U22 -to J2_65
 set_location_assignment PIN_P18 -to J2_66
 set_location_assignment PIN_U21 -to J2_67
 set_location_assignment PIN_P19 -to J2_78
-set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
+
+# Classic Timing Assignments
+# ==========================
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_global_assignment -name TIMEQUEST_MULTICORNER_ANALYSIS ON
+
+# Analysis & Synthesis Assignments
+# ================================
+set_global_assignment -name FAMILY "Cyclone V"
+set_global_assignment -name TOP_LEVEL_ENTITY top
+set_global_assignment -name VERILOG_INPUT_VERSION SYSTEMVERILOG_2005
+set_global_assignment -name VERILOG_SHOW_LMF_MAPPING_MESSAGES OFF
+set_global_assignment -name SYNTH_TIMING_DRIVEN_SYNTHESIS ON
+set_global_assignment -name SAVE_DISK_SPACE OFF
+set_global_assignment -name REMOVE_DUPLICATE_REGISTERS OFF
+
+# Fitter Assignments
+# ==================
+set_global_assignment -name DEVICE 5CEFA9F23C8
+set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "3.3-V LVCMOS"
+set_global_assignment -name CRC_ERROR_OPEN_DRAIN OFF
+set_global_assignment -name CYCLONEII_RESERVE_NCEO_AFTER_CONFIGURATION "USE AS REGULAR IO"
+set_global_assignment -name OPTIMIZE_HOLD_TIMING "ALL PATHS"
+set_global_assignment -name OPTIMIZE_MULTI_CORNER_TIMING ON
+set_global_assignment -name PHYSICAL_SYNTHESIS_EFFORT EXTRA
+set_global_assignment -name RESERVE_ALL_UNUSED_PINS "AS INPUT TRI-STATED"
+
+# Assembler Assignments
+# =====================
+set_global_assignment -name USE_CONFIGURATION_DEVICE OFF
+set_global_assignment -name RESERVE_ALL_UNUSED_PINS_NO_OUTPUT_GND "AS INPUT TRI-STATED"
+
+# LogicLock Region Assignments
+# ============================
+set_global_assignment -name LOGICLOCK_INCREMENTAL_COMPILE_ASSIGNMENT ON
+
+# Parameter Assignments
+# =====================
+set_parameter -name INVERT_COG_LEDS 1
+
+# Power Estimation Assignments
+# ============================
+set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
+set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
+
+# Advanced I/O Timing Assignments
+# ===============================
+set_global_assignment -name OUTPUT_IO_TIMING_NEAR_END_VMEAS "HALF VCCIO" -rise
+set_global_assignment -name OUTPUT_IO_TIMING_NEAR_END_VMEAS "HALF VCCIO" -fall
+set_global_assignment -name OUTPUT_IO_TIMING_FAR_END_VMEAS "HALF SIGNAL SWING" -rise
+set_global_assignment -name OUTPUT_IO_TIMING_FAR_END_VMEAS "HALF SIGNAL SWING" -fall
+
+# start CLOCK(clock_cog)
+# ----------------------
+
+	# Classic Timing Assignments
+	# ==========================
+	set_global_assignment -name FMAX_REQUIREMENT "80 MHz" -section_id clock_cog
+
+# end CLOCK(clock_cog)
+# --------------------
+
+# start CLOCK(clock_pll)
+# ----------------------
+
+	# Classic Timing Assignments
+	# ==========================
+	set_global_assignment -name FMAX_REQUIREMENT "160 MHz" -section_id clock_pll
+
+# end CLOCK(clock_pll)
+# --------------------
+
+# -----------------
+# start ENTITY(top)
+
+	# Fitter Assignments
+	# ==================
+	set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to inp_resn
+	set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to io[31]
+	set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to io[30]
+	set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to io[29]
+	set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to io[28]
+	set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to io[27]
+	set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to io[26]
+	set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to io[25]
+	set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to io[24]
+	set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to io[23]
+	set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to io[22]
+	set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to io[21]
+	set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to io[20]
+	set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to io[19]
+	set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to io[18]
+	set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to io[17]
+	set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to io[16]
+	set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to io[15]
+	set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to io[14]
+	set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to io[13]
+	set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to io[12]
+	set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to io[11]
+	set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to io[10]
+	set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to io[9]
+	set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to io[8]
+	set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to io[7]
+	set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to io[6]
+	set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to io[5]
+	set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to io[4]
+	set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to io[3]
+	set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to io[2]
+	set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to io[1]
+	set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to io[0]
+	set_instance_assignment -name IO_STANDARD "1.8 V" -to DDR3_CLK_50MHZ
+	set_instance_assignment -name IO_STANDARD "1.5 V" -to USER_LED1
+	set_instance_assignment -name IO_STANDARD "1.5 V" -to USER_LED2
+	set_instance_assignment -name IO_STANDARD "1.5 V" -to USER_LED3
+	set_instance_assignment -name IO_STANDARD "1.5 V" -to USER_LED4
+	set_instance_assignment -name IO_STANDARD "1.5 V" -to USER_LED5
+	set_instance_assignment -name IO_STANDARD "1.5 V" -to USER_LED6
+	set_instance_assignment -name IO_STANDARD "1.5 V" -to USER_LED7
+	set_instance_assignment -name IO_STANDARD "1.5 V" -to USER_LED8
+	set_instance_assignment -name IO_STANDARD "1.5 V" -to TACT1
+	set_instance_assignment -name IO_STANDARD "1.5 V" -to TACT2
+	set_instance_assignment -name IO_STANDARD "1.5 V" -to DIP_SW1
+	set_instance_assignment -name IO_STANDARD "1.5 V" -to DIP_SW2
+	set_instance_assignment -name IO_STANDARD "1.5 V" -to DIP_SW3
+	set_instance_assignment -name IO_STANDARD "1.5 V" -to DIP_SW4
+	set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to DDR3_A0
+	set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to DDR3_A1
+	set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to DDR3_A2
+	set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to DDR3_A3
+	set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to DDR3_A4
+	set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to DDR3_A5
+	set_instance_assignment -name IO_STANDARD "SSTL-18 CLASS I" -to DDR3_A6
+	set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to DDR3_A7
+	set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to DDR3_A8
+	set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to DDR3_A9
+	set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to DDR3_A10
+	set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to DDR3_A11
+	set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to DDR3_A12
+	set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to DDR3_A13
+	set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to DDR3_BA0
+	set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to DDR3_BA1
+	set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to DDR3_BA2
+	set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to DDR3_CASn
+	set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to DDR3_CKE
+	set_instance_assignment -name IO_STANDARD "DIFFERENTIAL 1.5-V SSTL CLASS I" -to DDR3_CLK
+	set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to DDR3_CSn
+	set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to DDR3_DM0
+	set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to DDR3_DM1
+	set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to DDR3_DQ0
+	set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to DDR3_DQ1
+	set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to DDR3_DQ2
+	set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to DDR3_DQ3
+	set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to DDR3_DQ4
+	set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to DDR3_DQ5
+	set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to DDR3_DQ6
+	set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to DDR3_DQ7
+	set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to DDR3_DQ8
+	set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to DDR3_DQ9
+	set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to DDR3_DQ10
+	set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to DDR3_DQ11
+	set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to DDR3_DQ12
+	set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to DDR3_DQ13
+	set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to DDR3_DQ14
+	set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to DDR3_DQ15
+	set_instance_assignment -name IO_STANDARD "DIFFERENTIAL 1.5-V SSTL CLASS I" -to DDR3_DQS0
+	set_instance_assignment -name IO_STANDARD "DIFFERENTIAL 1.5-V SSTL CLASS I" -to DDR3_DQS1
+	set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to DDR3_ODT
+	set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to DDR3_RASn
+	set_instance_assignment -name IO_STANDARD "1.5 V" -to DDR3_RESETn
+	set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to DDR3_WEn
+
+	# start DESIGN_PARTITION(Top)
+	# ---------------------------
+
+		# Incremental Compilation Assignments
+		# ===================================
+		set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+		set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+		set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+		set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
+
+	# end DESIGN_PARTITION(Top)
+	# -------------------------
+
+# end ENTITY(top)
+# ---------------
