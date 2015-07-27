@@ -19,7 +19,7 @@
 #
 # Quartus II 64-Bit
 # Version 15.0.1 Build 150 06/03/2015 SJ Web Edition
-# Date created = 23:53:53  July 25, 2015
+# Date created = 18:35:39  July 24, 2015
 #
 # -------------------------------------------------------------------------- #
 #
@@ -46,68 +46,69 @@ set_global_assignment -name LAST_QUARTUS_VERSION 15.0.1
 set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
 set_global_assignment -name SMART_RECOMPILE ON
 set_global_assignment -name NUM_PARALLEL_PROCESSORS ALL
+set_global_assignment -name VERILOG_FILE "BeMicroCV-A9.v"
 
 # Pin & Location Assignments
 # ==========================
+set_location_assignment PIN_M9 -to CLK_24MHZ
 set_location_assignment PIN_H13 -to DDR3_CLK_50MHZ
-set_location_assignment PIN_M9 -to CLK_24_MHZ
-set_location_assignment PIN_B17 -to USER_LED1
-set_location_assignment PIN_E19 -to USER_LED2
-set_location_assignment PIN_E21 -to USER_LED3
-set_location_assignment PIN_B21 -to USER_LED4
-set_location_assignment PIN_C20 -to USER_LED5
-set_location_assignment PIN_C21 -to USER_LED6
-set_location_assignment PIN_D19 -to USER_LED7
-set_location_assignment PIN_D21 -to USER_LED8
-set_location_assignment PIN_H18 -to TACT1
-set_location_assignment PIN_J18 -to TACT2
-set_location_assignment PIN_C16 -to DIP_SW1
-set_location_assignment PIN_D17 -to DIP_SW2
-set_location_assignment PIN_G17 -to DIP_SW3
-set_location_assignment PIN_E16 -to DIP_SW4
-set_location_assignment PIN_L7 -to DDR3_A0
-set_location_assignment PIN_K7 -to DDR3_A1
-set_location_assignment PIN_H8 -to DDR3_A2
-set_location_assignment PIN_G8 -to DDR3_A3
-set_location_assignment PIN_J7 -to DDR3_A4
-set_location_assignment PIN_J8 -to DDR3_A5
-set_location_assignment PIN_A10 -to DDR3_A6
-set_location_assignment PIN_A9 -to DDR3_A7
-set_location_assignment PIN_A8 -to DDR3_A8
-set_location_assignment PIN_A7 -to DDR3_A9
-set_location_assignment PIN_C6 -to DDR3_A10
-set_location_assignment PIN_D6 -to DDR3_A11
-set_location_assignment PIN_D7 -to DDR3_A12
-set_location_assignment PIN_C8 -to DDR3_A13
-set_location_assignment PIN_A5 -to DDR3_BA0
-set_location_assignment PIN_B10 -to DDR3_BA1
-set_location_assignment PIN_C9 -to DDR3_BA2
+set_location_assignment PIN_B17 -to USER_LED[1]
+set_location_assignment PIN_E19 -to USER_LED[2]
+set_location_assignment PIN_E21 -to USER_LED[3]
+set_location_assignment PIN_B21 -to USER_LED[4]
+set_location_assignment PIN_C20 -to USER_LED[5]
+set_location_assignment PIN_C21 -to USER_LED[6]
+set_location_assignment PIN_D19 -to USER_LED[7]
+set_location_assignment PIN_D21 -to USER_LED[8]
+set_location_assignment PIN_H18 -to TACT[1]
+set_location_assignment PIN_J18 -to TACT[2]
+set_location_assignment PIN_C16 -to DIP_SW[1]
+set_location_assignment PIN_D17 -to DIP_SW[2]
+set_location_assignment PIN_G17 -to DIP_SW[3]
+set_location_assignment PIN_E16 -to DIP_SW[4]
+set_location_assignment PIN_L7 -to DDR3_A[0]
+set_location_assignment PIN_K7 -to DDR3_A[1]
+set_location_assignment PIN_H8 -to DDR3_A[2]
+set_location_assignment PIN_G8 -to DDR3_A[3]
+set_location_assignment PIN_J7 -to DDR3_A[4]
+set_location_assignment PIN_J8 -to DDR3_A[5]
+set_location_assignment PIN_A10 -to DDR3_A[6]
+set_location_assignment PIN_A9 -to DDR3_A[7]
+set_location_assignment PIN_A8 -to DDR3_A[8]
+set_location_assignment PIN_A7 -to DDR3_A[9]
+set_location_assignment PIN_C6 -to DDR3_A[10]
+set_location_assignment PIN_D6 -to DDR3_A[11]
+set_location_assignment PIN_D7 -to DDR3_A[12]
+set_location_assignment PIN_C8 -to DDR3_A[13]
+set_location_assignment PIN_A5 -to DDR3_BA[0]
+set_location_assignment PIN_B10 -to DDR3_BA[1]
+set_location_assignment PIN_C9 -to DDR3_BA[2]
 set_location_assignment PIN_B6 -to DDR3_CASn
 set_location_assignment PIN_J9 -to DDR3_CLK
 set_location_assignment PIN_H9 -to "DDR3_CLK(n)"
 set_location_assignment PIN_E9 -to DDR3_CSn
-set_location_assignment PIN_G11 -to DDR3_DM0
-set_location_assignment PIN_J17 -to DDR3_DM1
-set_location_assignment PIN_E12 -to DDR3_DQ0
-set_location_assignment PIN_D12 -to DDR3_DQ1
-set_location_assignment PIN_C11 -to DDR3_DQ2
-set_location_assignment PIN_K9 -to DDR3_DQ3
-set_location_assignment PIN_C13 -to DDR3_DQ4
-set_location_assignment PIN_D13 -to DDR3_DQ5
-set_location_assignment PIN_B12 -to DDR3_DQ6
-set_location_assignment PIN_F12 -to DDR3_DQ7
-set_location_assignment PIN_F13 -to DDR3_DQ8
-set_location_assignment PIN_E14 -to DDR3_DQ9
-set_location_assignment PIN_J11 -to DDR3_DQ10
-set_location_assignment PIN_A13 -to DDR3_DQ11
-set_location_assignment PIN_B15 -to DDR3_DQ12
-set_location_assignment PIN_C15 -to DDR3_DQ13
-set_location_assignment PIN_G15 -to DDR3_DQ14
-set_location_assignment PIN_K16 -to DDR3_DQ15
-set_location_assignment PIN_H11 -to DDR3_DQS0
-set_location_assignment PIN_G12 -to "DDR3_DQS0(n)"
-set_location_assignment PIN_H14 -to DDR3_DQS1
-set_location_assignment PIN_J13 -to "DDR3_DQS1(n)"
+set_location_assignment PIN_G11 -to DDR3_DM[0]
+set_location_assignment PIN_J17 -to DDR3_DM[1]
+set_location_assignment PIN_E12 -to DDR3_DQ[0]
+set_location_assignment PIN_D12 -to DDR3_DQ[1]
+set_location_assignment PIN_C11 -to DDR3_DQ[2]
+set_location_assignment PIN_K9 -to DDR3_DQ[3]
+set_location_assignment PIN_C13 -to DDR3_DQ[4]
+set_location_assignment PIN_D13 -to DDR3_DQ[5]
+set_location_assignment PIN_B12 -to DDR3_DQ[6]
+set_location_assignment PIN_F12 -to DDR3_DQ[7]
+set_location_assignment PIN_F13 -to DDR3_DQ[8]
+set_location_assignment PIN_E14 -to DDR3_DQ[9]
+set_location_assignment PIN_J11 -to DDR3_DQ[10]
+set_location_assignment PIN_A13 -to DDR3_DQ[11]
+set_location_assignment PIN_B15 -to DDR3_DQ[12]
+set_location_assignment PIN_C15 -to DDR3_DQ[13]
+set_location_assignment PIN_G15 -to DDR3_DQ[14]
+set_location_assignment PIN_K16 -to DDR3_DQ[15]
+set_location_assignment PIN_H11 -to DDR3_DQS[0]
+set_location_assignment PIN_G12 -to "DDR3_DQS[0](n)"
+set_location_assignment PIN_H14 -to DDR3_DQS[1]
+set_location_assignment PIN_J13 -to "DDR3_DQS[1](n)"
 set_location_assignment PIN_L8 -to DDR3_ODT
 set_location_assignment PIN_B7 -to DDR3_RASn
 set_location_assignment PIN_J19 -to DDR3_RESETn
@@ -120,124 +121,124 @@ set_location_assignment PIN_K22 -to ENET_TX_EN
 set_location_assignment PIN_V9 -to ENET_RX_DV
 set_location_assignment PIN_V13 -to ENET_MDC
 set_location_assignment PIN_AB12 -to ENET_MDIO
-set_location_assignment PIN_M21 -to ENET_TXD0
-set_location_assignment PIN_M20 -to ENET_TXD1
-set_location_assignment PIN_N21 -to ENET_TXD2
-set_location_assignment PIN_N20 -to ENET_TXD3
-set_location_assignment PIN_AB6 -to ENET_RXD0
-set_location_assignment PIN_AB5 -to ENET_RXD1
-set_location_assignment PIN_AA7 -to ENET_RXD2
-set_location_assignment PIN_AB7 -to ENET_RXD3
+set_location_assignment PIN_M21 -to ENET_TXD[0]
+set_location_assignment PIN_M20 -to ENET_TXD[1]
+set_location_assignment PIN_N21 -to ENET_TXD[2]
+set_location_assignment PIN_N20 -to ENET_TXD[3]
+set_location_assignment PIN_AB6 -to ENET_RXD[0]
+set_location_assignment PIN_AB5 -to ENET_RXD[1]
+set_location_assignment PIN_AA7 -to ENET_RXD[2]
+set_location_assignment PIN_AB7 -to ENET_RXD[3]
 set_location_assignment PIN_P16 -to EEPROM_SDA
 set_location_assignment PIN_P17 -to EEPROM_SCL
 set_location_assignment PIN_M22 -to SDCLK
 set_location_assignment PIN_W9 -to SDCMD
-set_location_assignment PIN_U6 -to SDD0
-set_location_assignment PIN_V6 -to SDD1
-set_location_assignment PIN_U7 -to SDD2
-set_location_assignment PIN_U8 -to SDD3
-set_location_assignment PIN_T15 -to J1_2
-set_location_assignment PIN_P22 -to J1_3
-set_location_assignment PIN_R15 -to J1_4
-set_location_assignment PIN_R22 -to J1_5
-set_location_assignment PIN_R16 -to J1_6
-set_location_assignment PIN_R21 -to J1_7
-set_location_assignment PIN_R17 -to J1_8
-set_location_assignment PIN_T22 -to J1_9
-set_location_assignment PIN_AA9 -to J1_10
-set_location_assignment PIN_T19 -to J1_13
-set_location_assignment PIN_T20 -to J1_14
-set_location_assignment PIN_AA8 -to J1_15
-set_location_assignment PIN_AB8 -to J1_16
-set_location_assignment PIN_Y11 -to J1_17
-set_location_assignment PIN_AA12 -to J1_18
-set_location_assignment PIN_T18 -to J1_21
-set_location_assignment PIN_T17 -to J1_22
-set_location_assignment PIN_L19 -to J1_23
-set_location_assignment PIN_L18 -to J1_24
-set_location_assignment PIN_K17 -to J1_25
-set_location_assignment PIN_L17 -to J1_26
-set_location_assignment PIN_N19 -to J1_27
-set_location_assignment PIN_M18 -to J1_28
-set_location_assignment PIN_N16 -to J1_31
-set_location_assignment PIN_M16 -to J1_32
-set_location_assignment PIN_U10 -to J1_33
-set_location_assignment PIN_T9 -to J1_34
-set_location_assignment PIN_R9 -to J1_35
-set_location_assignment PIN_T10 -to J1_36
-set_location_assignment PIN_U12 -to J1_37
-set_location_assignment PIN_U11 -to J1_38
-set_location_assignment PIN_R11 -to J1_39
-set_location_assignment PIN_R10 -to J1_40
-set_location_assignment PIN_V10 -to J4_5
-set_location_assignment PIN_P8 -to J4_6
-set_location_assignment PIN_R7 -to J4_11
-set_location_assignment PIN_P7 -to J4_12
-set_location_assignment PIN_W8 -to J4_13
-set_location_assignment PIN_AA10 -to J4_29
-set_location_assignment PIN_Y10 -to J4_31
-set_location_assignment PIN_Y9 -to J4_32
-set_location_assignment PIN_R12 -to J4_35
-set_location_assignment PIN_P12 -to J4_36
-set_location_assignment PIN_AB10 -to J4_37
-set_location_assignment PIN_AB11 -to J4_38
-set_location_assignment PIN_U13 -to J2_3
-set_location_assignment PIN_W16 -to J2_5
-set_location_assignment PIN_N9 -to J2_6
-set_location_assignment PIN_V15 -to J2_7
-set_location_assignment PIN_P9 -to J2_8
-set_location_assignment PIN_AA13 -to J2_9
-set_location_assignment PIN_AA14 -to J2_11
-set_location_assignment PIN_M7 -to J2_12
-set_location_assignment PIN_Y14 -to J2_13
-set_location_assignment PIN_M6 -to J2_14
-set_location_assignment PIN_AB15 -to J2_15
-set_location_assignment PIN_N6 -to J2_16
-set_location_assignment PIN_AA15 -to J2_17
-set_location_assignment PIN_P6 -to J2_18
-set_location_assignment PIN_Y15 -to J2_19
-set_location_assignment PIN_R5 -to J2_20
-set_location_assignment PIN_Y16 -to J2_23
-set_location_assignment PIN_R6 -to J2_24
-set_location_assignment PIN_AB17 -to J2_25
-set_location_assignment PIN_T7 -to J2_26
-set_location_assignment PIN_AA17 -to J2_27
-set_location_assignment PIN_T8 -to J2_28
-set_location_assignment PIN_Y17 -to J2_29
-set_location_assignment PIN_P14 -to J2_30
-set_location_assignment PIN_AB18 -to J2_31
-set_location_assignment PIN_R14 -to J2_34
-set_location_assignment PIN_AA18 -to J2_35
-set_location_assignment PIN_T12 -to J2_36
-set_location_assignment PIN_AA19 -to J2_37
-set_location_assignment PIN_T13 -to J2_38
-set_location_assignment PIN_Y19 -to J2_39
-set_location_assignment PIN_T14 -to J2_40
-set_location_assignment PIN_AB20 -to J2_41
-set_location_assignment PIN_V14 -to J2_42
-set_location_assignment PIN_Y20 -to J2_43
-set_location_assignment PIN_AA20 -to J2_45
-set_location_assignment PIN_V16 -to J2_46
-set_location_assignment PIN_AB22 -to J2_47
-set_location_assignment PIN_U15 -to J2_48
-set_location_assignment PIN_AB21 -to J2_49
-set_location_assignment PIN_U16 -to J2_50
-set_location_assignment PIN_AA22 -to J2_51
-set_location_assignment PIN_U17 -to J2_52
-set_location_assignment PIN_Y22 -to J2_55
-set_location_assignment PIN_V18 -to J2_56
-set_location_assignment PIN_Y21 -to J2_57
-set_location_assignment PIN_W19 -to J2_58
-set_location_assignment PIN_W22 -to J2_59
-set_location_assignment PIN_V19 -to J2_60
-set_location_assignment PIN_W21 -to J2_61
-set_location_assignment PIN_V20 -to J2_62
-set_location_assignment PIN_V21 -to J2_63
-set_location_assignment PIN_U20 -to J2_64
-set_location_assignment PIN_U22 -to J2_65
-set_location_assignment PIN_P18 -to J2_66
-set_location_assignment PIN_U21 -to J2_67
-set_location_assignment PIN_P19 -to J2_78
+set_location_assignment PIN_U6 -to SDD[0]
+set_location_assignment PIN_V6 -to SDD[1]
+set_location_assignment PIN_U7 -to SDD[2]
+set_location_assignment PIN_U8 -to SDD[3]
+set_location_assignment PIN_T15 -to J1[2]
+set_location_assignment PIN_P22 -to J1[3]
+set_location_assignment PIN_R15 -to J1[4]
+set_location_assignment PIN_R22 -to J1[5]
+set_location_assignment PIN_R16 -to J1[6]
+set_location_assignment PIN_R21 -to J1[7]
+set_location_assignment PIN_R17 -to J1[8]
+set_location_assignment PIN_T22 -to J1[9]
+set_location_assignment PIN_AA9 -to J1[10]
+set_location_assignment PIN_T19 -to J1[13]
+set_location_assignment PIN_T20 -to J1[14]
+set_location_assignment PIN_AA8 -to J1[15]
+set_location_assignment PIN_AB8 -to J1[16]
+set_location_assignment PIN_Y11 -to J1[17]
+set_location_assignment PIN_AA12 -to J1[18]
+set_location_assignment PIN_T18 -to J1[21]
+set_location_assignment PIN_T17 -to J1[22]
+set_location_assignment PIN_L19 -to J1[23]
+set_location_assignment PIN_L18 -to J1[24]
+set_location_assignment PIN_K17 -to J1[25]
+set_location_assignment PIN_L17 -to J1[26]
+set_location_assignment PIN_N19 -to J1[27]
+set_location_assignment PIN_M18 -to J1[28]
+set_location_assignment PIN_N16 -to J1[31]
+set_location_assignment PIN_M16 -to J1[32]
+set_location_assignment PIN_U10 -to J1[33]
+set_location_assignment PIN_T9 -to J1[34]
+set_location_assignment PIN_R9 -to J1[35]
+set_location_assignment PIN_T10 -to J1[36]
+set_location_assignment PIN_U12 -to J1[37]
+set_location_assignment PIN_U11 -to J1[38]
+set_location_assignment PIN_R11 -to J1[39]
+set_location_assignment PIN_R10 -to J1[40]
+set_location_assignment PIN_V10 -to J4[5]
+set_location_assignment PIN_P8 -to J4[6]
+set_location_assignment PIN_R7 -to J4[11]
+set_location_assignment PIN_P7 -to J4[12]
+set_location_assignment PIN_W8 -to J4[13]
+set_location_assignment PIN_AA10 -to J4[29]
+set_location_assignment PIN_Y10 -to J4[31]
+set_location_assignment PIN_Y9 -to J4[32]
+set_location_assignment PIN_R12 -to J4[35]
+set_location_assignment PIN_P12 -to J4[36]
+set_location_assignment PIN_AB10 -to J4[37]
+set_location_assignment PIN_AB11 -to J4[38]
+set_location_assignment PIN_U13 -to J2[3]
+set_location_assignment PIN_W16 -to J2[5]
+set_location_assignment PIN_N9 -to J2[6]
+set_location_assignment PIN_V15 -to J2[7]
+set_location_assignment PIN_P9 -to J2[8]
+set_location_assignment PIN_AA13 -to J2[9]
+set_location_assignment PIN_AA14 -to J2[11]
+set_location_assignment PIN_M7 -to J2[12]
+set_location_assignment PIN_Y14 -to J2[13]
+set_location_assignment PIN_M6 -to J2[14]
+set_location_assignment PIN_AB15 -to J2[15]
+set_location_assignment PIN_N6 -to J2[16]
+set_location_assignment PIN_AA15 -to J2[17]
+set_location_assignment PIN_P6 -to J2[18]
+set_location_assignment PIN_Y15 -to J2[19]
+set_location_assignment PIN_R5 -to J2[20]
+set_location_assignment PIN_Y16 -to J2[23]
+set_location_assignment PIN_R6 -to J2[24]
+set_location_assignment PIN_AB17 -to J2[25]
+set_location_assignment PIN_T7 -to J2[26]
+set_location_assignment PIN_AA17 -to J2[27]
+set_location_assignment PIN_T8 -to J2[28]
+set_location_assignment PIN_Y17 -to J2[29]
+set_location_assignment PIN_P14 -to J2[30]
+set_location_assignment PIN_AB18 -to J2[31]
+set_location_assignment PIN_R14 -to J2[34]
+set_location_assignment PIN_AA18 -to J2[35]
+set_location_assignment PIN_T12 -to J2[36]
+set_location_assignment PIN_AA19 -to J2[37]
+set_location_assignment PIN_T13 -to J2[38]
+set_location_assignment PIN_Y19 -to J2[39]
+set_location_assignment PIN_T14 -to J2[40]
+set_location_assignment PIN_AB20 -to J2[41]
+set_location_assignment PIN_V14 -to J2[42]
+set_location_assignment PIN_Y20 -to J2[43]
+set_location_assignment PIN_AA20 -to J2[45]
+set_location_assignment PIN_V16 -to J2[46]
+set_location_assignment PIN_AB22 -to J2[47]
+set_location_assignment PIN_U15 -to J2[48]
+set_location_assignment PIN_AB21 -to J2[49]
+set_location_assignment PIN_U16 -to J2[50]
+set_location_assignment PIN_AA22 -to J2[51]
+set_location_assignment PIN_U17 -to J2[52]
+set_location_assignment PIN_Y22 -to J2[55]
+set_location_assignment PIN_V18 -to J2[56]
+set_location_assignment PIN_Y21 -to J2[57]
+set_location_assignment PIN_W19 -to J2[58]
+set_location_assignment PIN_W22 -to J2[59]
+set_location_assignment PIN_V19 -to J2[60]
+set_location_assignment PIN_W21 -to J2[61]
+set_location_assignment PIN_V20 -to J2[62]
+set_location_assignment PIN_V21 -to J2[63]
+set_location_assignment PIN_U20 -to J2[64]
+set_location_assignment PIN_U22 -to J2[65]
+set_location_assignment PIN_P18 -to J2[66]
+set_location_assignment PIN_U21 -to J2[67]
+set_location_assignment PIN_P19 -to J2[78]
 
 # Classic Timing Assignments
 # ==========================
@@ -248,7 +249,7 @@ set_global_assignment -name TIMEQUEST_MULTICORNER_ANALYSIS ON
 # Analysis & Synthesis Assignments
 # ================================
 set_global_assignment -name FAMILY "Cyclone V"
-set_global_assignment -name TOP_LEVEL_ENTITY top
+set_global_assignment -name TOP_LEVEL_ENTITY bemicrocva9
 set_global_assignment -name VERILOG_INPUT_VERSION SYSTEMVERILOG_2005
 set_global_assignment -name VERILOG_SHOW_LMF_MAPPING_MESSAGES OFF
 set_global_assignment -name SYNTH_TIMING_DRIVEN_SYNTHESIS ON
@@ -263,7 +264,14 @@ set_global_assignment -name CRC_ERROR_OPEN_DRAIN OFF
 set_global_assignment -name CYCLONEII_RESERVE_NCEO_AFTER_CONFIGURATION "USE AS REGULAR IO"
 set_global_assignment -name OPTIMIZE_HOLD_TIMING "ALL PATHS"
 set_global_assignment -name OPTIMIZE_MULTI_CORNER_TIMING ON
-set_global_assignment -name PHYSICAL_SYNTHESIS_EFFORT EXTRA
+set_global_assignment -name SEED 1
+set_global_assignment -name PHYSICAL_SYNTHESIS_COMBO_LOGIC OFF
+set_global_assignment -name PHYSICAL_SYNTHESIS_REGISTER_RETIMING OFF
+set_global_assignment -name PHYSICAL_SYNTHESIS_ASYNCHRONOUS_SIGNAL_PIPELINING OFF
+set_global_assignment -name PHYSICAL_SYNTHESIS_REGISTER_DUPLICATION OFF
+set_global_assignment -name FITTER_EFFORT "AUTO FIT"
+set_global_assignment -name QII_AUTO_PACKED_REGISTERS AUTO
+set_global_assignment -name PHYSICAL_SYNTHESIS_EFFORT FAST
 set_global_assignment -name RESERVE_ALL_UNUSED_PINS "AS INPUT TRI-STATED"
 
 # Assembler Assignments
@@ -274,10 +282,6 @@ set_global_assignment -name RESERVE_ALL_UNUSED_PINS_NO_OUTPUT_GND "AS INPUT TRI-
 # LogicLock Region Assignments
 # ============================
 set_global_assignment -name LOGICLOCK_INCREMENTAL_COMPILE_ASSIGNMENT ON
-
-# Parameter Assignments
-# =====================
-set_parameter -name INVERT_COG_LEDS 1
 
 # Power Estimation Assignments
 # ============================
@@ -296,7 +300,7 @@ set_global_assignment -name OUTPUT_IO_TIMING_FAR_END_VMEAS "HALF SIGNAL SWING" -
 
 	# Classic Timing Assignments
 	# ==========================
-	set_global_assignment -name FMAX_REQUIREMENT "80 MHz" -section_id clock_cog
+set_global_assignment -name FMAX_REQUIREMENT "80 MHz" -section_id clock_cog
 
 # end CLOCK(clock_cog)
 # --------------------
@@ -306,122 +310,98 @@ set_global_assignment -name OUTPUT_IO_TIMING_FAR_END_VMEAS "HALF SIGNAL SWING" -
 
 	# Classic Timing Assignments
 	# ==========================
-	set_global_assignment -name FMAX_REQUIREMENT "160 MHz" -section_id clock_pll
+set_global_assignment -name FMAX_REQUIREMENT "160 MHz" -section_id clock_pll
 
 # end CLOCK(clock_pll)
 # --------------------
 
-# -----------------
-# start ENTITY(top)
+# --------------------------
+# start ENTITY(BeMicroCV-A9)
 
 	# Fitter Assignments
 	# ==================
-	set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to inp_resn
-	set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to io[31]
-	set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to io[30]
-	set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to io[29]
-	set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to io[28]
-	set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to io[27]
-	set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to io[26]
-	set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to io[25]
-	set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to io[24]
-	set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to io[23]
-	set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to io[22]
-	set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to io[21]
-	set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to io[20]
-	set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to io[19]
-	set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to io[18]
-	set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to io[17]
-	set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to io[16]
-	set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to io[15]
-	set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to io[14]
-	set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to io[13]
-	set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to io[12]
-	set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to io[11]
-	set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to io[10]
-	set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to io[9]
-	set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to io[8]
-	set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to io[7]
-	set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to io[6]
-	set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to io[5]
-	set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to io[4]
-	set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to io[3]
-	set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to io[2]
-	set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to io[1]
-	set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to io[0]
-	set_instance_assignment -name IO_STANDARD "1.8 V" -to DDR3_CLK_50MHZ
-	set_instance_assignment -name IO_STANDARD "1.5 V" -to USER_LED1
-	set_instance_assignment -name IO_STANDARD "1.5 V" -to USER_LED2
-	set_instance_assignment -name IO_STANDARD "1.5 V" -to USER_LED3
-	set_instance_assignment -name IO_STANDARD "1.5 V" -to USER_LED4
-	set_instance_assignment -name IO_STANDARD "1.5 V" -to USER_LED5
-	set_instance_assignment -name IO_STANDARD "1.5 V" -to USER_LED6
-	set_instance_assignment -name IO_STANDARD "1.5 V" -to USER_LED7
-	set_instance_assignment -name IO_STANDARD "1.5 V" -to USER_LED8
-	set_instance_assignment -name IO_STANDARD "1.5 V" -to TACT1
-	set_instance_assignment -name IO_STANDARD "1.5 V" -to TACT2
-	set_instance_assignment -name IO_STANDARD "1.5 V" -to DIP_SW1
-	set_instance_assignment -name IO_STANDARD "1.5 V" -to DIP_SW2
-	set_instance_assignment -name IO_STANDARD "1.5 V" -to DIP_SW3
-	set_instance_assignment -name IO_STANDARD "1.5 V" -to DIP_SW4
-	set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to DDR3_A0
-	set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to DDR3_A1
-	set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to DDR3_A2
-	set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to DDR3_A3
-	set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to DDR3_A4
-	set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to DDR3_A5
-	set_instance_assignment -name IO_STANDARD "SSTL-18 CLASS I" -to DDR3_A6
-	set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to DDR3_A7
-	set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to DDR3_A8
-	set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to DDR3_A9
-	set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to DDR3_A10
-	set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to DDR3_A11
-	set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to DDR3_A12
-	set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to DDR3_A13
-	set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to DDR3_BA0
-	set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to DDR3_BA1
-	set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to DDR3_BA2
-	set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to DDR3_CASn
-	set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to DDR3_CKE
-	set_instance_assignment -name IO_STANDARD "DIFFERENTIAL 1.5-V SSTL CLASS I" -to DDR3_CLK
-	set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to DDR3_CSn
-	set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to DDR3_DM0
-	set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to DDR3_DM1
-	set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to DDR3_DQ0
-	set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to DDR3_DQ1
-	set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to DDR3_DQ2
-	set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to DDR3_DQ3
-	set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to DDR3_DQ4
-	set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to DDR3_DQ5
-	set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to DDR3_DQ6
-	set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to DDR3_DQ7
-	set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to DDR3_DQ8
-	set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to DDR3_DQ9
-	set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to DDR3_DQ10
-	set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to DDR3_DQ11
-	set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to DDR3_DQ12
-	set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to DDR3_DQ13
-	set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to DDR3_DQ14
-	set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to DDR3_DQ15
-	set_instance_assignment -name IO_STANDARD "DIFFERENTIAL 1.5-V SSTL CLASS I" -to DDR3_DQS0
-	set_instance_assignment -name IO_STANDARD "DIFFERENTIAL 1.5-V SSTL CLASS I" -to DDR3_DQS1
-	set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to DDR3_ODT
-	set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to DDR3_RASn
-	set_instance_assignment -name IO_STANDARD "1.5 V" -to DDR3_RESETn
-	set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to DDR3_WEn
 
 	# start DESIGN_PARTITION(Top)
 	# ---------------------------
 
 		# Incremental Compilation Assignments
 		# ===================================
-		set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
-		set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
-		set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
-		set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
 
 	# end DESIGN_PARTITION(Top)
 	# -------------------------
 
+# end ENTITY(BeMicroCV-A9)
+# ------------------------
+
+# -----------------
+# start ENTITY(top)
+
 # end ENTITY(top)
 # ---------------
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_instance_assignment -name IO_STANDARD "1.8 V" -to DDR3_CLK_50MHZ
+set_instance_assignment -name IO_STANDARD "1.5 V" -to USER_LED[1]
+set_instance_assignment -name IO_STANDARD "1.5 V" -to USER_LED[2]
+set_instance_assignment -name IO_STANDARD "1.5 V" -to USER_LED[3]
+set_instance_assignment -name IO_STANDARD "1.5 V" -to USER_LED[4]
+set_instance_assignment -name IO_STANDARD "1.5 V" -to USER_LED[5]
+set_instance_assignment -name IO_STANDARD "1.5 V" -to USER_LED[6]
+set_instance_assignment -name IO_STANDARD "1.5 V" -to USER_LED[7]
+set_instance_assignment -name IO_STANDARD "1.5 V" -to USER_LED[8]
+set_instance_assignment -name IO_STANDARD "1.5 V" -to TACT[1]
+set_instance_assignment -name IO_STANDARD "1.5 V" -to TACT[2]
+set_instance_assignment -name IO_STANDARD "1.5 V" -to DIP_SW[1]
+set_instance_assignment -name IO_STANDARD "1.5 V" -to DIP_SW[2]
+set_instance_assignment -name IO_STANDARD "1.5 V" -to DIP_SW[3]
+set_instance_assignment -name IO_STANDARD "1.5 V" -to DIP_SW[4]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to DDR3_A[0]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to DDR3_A[1]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to DDR3_A[2]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to DDR3_A[3]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to DDR3_A[4]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to DDR3_A[5]
+set_instance_assignment -name IO_STANDARD "SSTL-18 CLASS I" -to DDR3_A[6]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to DDR3_A[7]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to DDR3_A[8]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to DDR3_A[9]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to DDR3_A[10]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to DDR3_A[11]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to DDR3_A[12]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to DDR3_A[13]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to DDR3_BA[0]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to DDR3_BA[1]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to DDR3_BA[2]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to DDR3_CASn
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to DDR3_CKE
+set_instance_assignment -name IO_STANDARD "DIFFERENTIAL 1.5-V SSTL CLASS I" -to DDR3_CLK
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to DDR3_CSn
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to DDR3_DM[0]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to DDR3_DM[1]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to DDR3_DQ[0]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to DDR3_DQ[1]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to DDR3_DQ[2]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to DDR3_DQ[3]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to DDR3_DQ[4]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to DDR3_DQ[5]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to DDR3_DQ[6]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to DDR3_DQ[7]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to DDR3_DQ[8]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to DDR3_DQ[9]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to DDR3_DQ[10]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to DDR3_DQ[11]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to DDR3_DQ[12]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to DDR3_DQ[13]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to DDR3_DQ[14]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to DDR3_DQ[15]
+set_instance_assignment -name IO_STANDARD "DIFFERENTIAL 1.5-V SSTL CLASS I" -to DDR3_DQS[0]
+set_instance_assignment -name IO_STANDARD "DIFFERENTIAL 1.5-V SSTL CLASS I" -to DDR3_DQS[1]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to DDR3_ODT
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to DDR3_RASn
+set_instance_assignment -name IO_STANDARD "1.5 V" -to DDR3_RESETn
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to DDR3_WEn
+set_global_assignment -name FLOW_ENABLE_RTL_VIEWER OFF
+set_global_assignment -name FLOW_DISABLE_ASSEMBLER OFF
+set_global_assignment -name ADVANCED_PHYSICAL_OPTIMIZATION OFF
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
