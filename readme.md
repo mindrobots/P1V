@@ -23,7 +23,7 @@ The Propeller 1 Design files are structured to run on the following development 
 * [Terasic DE2-115](http://www.parallax.com/product/60050) (Altera Cyclone IV)
 * [Terasic DE0-Nano](http://www.parallax.com/product/60056) (Altera Cyclone IV)
 * [Arrow BeMicro CV](https://parts.arrow.com/item/detail/arrow-development-tools/bemicrocv) (Altera Cyclone V)
-* [Arrow BeMicro CV-A9][http://www.alterawiki.com/wiki/BeMicro_CV_A9] (Altera Cyclone V)
+* [Arrow BeMicro CV-A9](http://www.alterawiki.com/wiki/BeMicro_CV_A9) (Altera Cyclone V)
 
 Other target systems will be added soon, including Xilinx FPGAs!
 
