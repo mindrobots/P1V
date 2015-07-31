@@ -1,4 +1,6 @@
-// Top-level module for 1-2-3 FPGA
+// Top-level module for Parallax 1-2-3 FPGA A7 Version (#60054)
+//
+// Created from BeMicroCV-A9.v by Rick Post (aka Mindrobots) 7-31-15
 
 /*
 -------------------------------------------------------------------------------
@@ -26,19 +28,20 @@ the Propeller 1 Design.  If not, see <http://www.gnu.org/licenses/>.
 module              fpga123
 (
 
+// pull pin assignments from .qsf file definitions
+
 input               clock_50,
-output wire   [15:0] led,
-input         [3:0] pb,
-inout wire   [63:0] p,
-inout wire   fpga_rx,
-inout wire   fpga_tx,
-inout wire   fpga_resn
+output wire   [15:0] led,   // use all the user LEDS for COG indicators   
+inout wire   [31:0] p,
+inout wire   fpga_rx,   // use the 1-2-3-FPGA USB serial I/O   
+inout wire   fpga_tx,   // instaed of a prop plug - board must 
+inout wire   fpga_resn  // be in "Run" mode for this to be active
 
 
 );
 
 //
-// Reset can come from Prop plug or tactile switch
+// Reset comes from USB port serial connection
 //
 
 wire resn;
@@ -47,11 +50,12 @@ assign resn = fpga_resn;
 
 //
 // The LEDs are on when set to 0, so we reverse the cog led outputs here
-//
+// 1-2-3-FPGA has 16 user LEDs - default is to use 0-7 to indicate active
+// and 8-15 to indicate inactive COG
 
 wire[8:1] cogled;
-assign led[7:0] = ~cogled[8:1];
-assign led[15:8] = cogled[8:1];
+assign led[7:0] = ~cogled[8:1]; // lit when COG is active
+assign led[15:8] = cogled[8:1]; // lit when COG is inactive
 
 //
 // Inputs

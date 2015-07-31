@@ -36,6 +36,10 @@
 # -------------------------------------------------------------------------- #
 
 
+# This is the standard .qsf file for the Parallax 1-2-3-FPGA (A7) board #60054
+# originally provided in a .zipfile on 7-21-15 by Parallax to A7 board purchasers
+# 
+
 set_global_assignment -name FAMILY "Cyclone V"
 set_global_assignment -name DEVICE 5CEFA7F23C8
 set_global_assignment -name TOP_LEVEL_ENTITY fpga123

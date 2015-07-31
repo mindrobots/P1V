@@ -12,6 +12,7 @@ c5_pin_model_dump.txt
 *.pof
 *.qdf
 *.qws
+*.rbf
 *.rpt
 *.sld
 *.sof
@@ -22,3 +23,5 @@ db/
 incremental_db/
 simulation/
 hc_output/
+output_files/
+
