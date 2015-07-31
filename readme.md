@@ -24,6 +24,7 @@ The Propeller 1 Design files are structured to run on the following development 
 * [Terasic DE0-Nano](http://www.parallax.com/product/60056) (Altera Cyclone IV)
 * [Arrow BeMicro CV](https://parts.arrow.com/item/detail/arrow-development-tools/bemicrocv) (Altera Cyclone V)
 * [Arrow BeMicro CV-A9](http://www.alterawiki.com/wiki/BeMicro_CV_A9) (Altera Cyclone V)
+* [Parallax 1-2-3 Board (A7)](http://forums.parallax.com/discussion/161545) (Altera Cyclone V)
 
 Other target systems will be added soon, including Xilinx FPGAs!
 
@@ -57,6 +58,7 @@ The easiest way to make your changes available and to make it easy for yourself 
 Revision Notes
 --------------
 
+* 2015-07-31 - (Rick Post (MindRobots)) Added FPGA123-A7 target.
 * 2015-07-26 - (Jac Goudsmit) Added BeMicroCV-A9 target, updated documentation.
 * 2015-01-13 - (Jac Goudsmit) De-tabbed all source files, merged all sources into one directory to reduce maintenance effort, updated documentation.
 * 2014-08-11 - (Parallax) Fixed bug in reset for dira register (cog.v). Added support for the BeMicroCV board.
